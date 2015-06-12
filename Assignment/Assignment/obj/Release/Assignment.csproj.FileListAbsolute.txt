@@ -1,0 +1,6 @@
+D:\CSC\Assignment\Assignment\bin\Assignment.dll.config
+D:\CSC\Assignment\Assignment\bin\Assignment.dll
+D:\CSC\Assignment\Assignment\bin\Assignment.pdb
+D:\CSC\Assignment\Assignment\obj\Release\Assignment.csprojResolveAssemblyReference.cache
+D:\CSC\Assignment\Assignment\obj\Release\Assignment.dll
+D:\CSC\Assignment\Assignment\obj\Release\Assignment.pdb

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+        function loadThruJqueryAjax(externalUrl, externalTextDiv) {
+            $(externalTextDiv).load(externalUrl, function (responseTxt, statusTxt, xhr) {
+                if (statusTxt == "success") {
+                    $(externalTextDiv).html("Server side time: " + '<span style="color:blue">' + responseTxt + "</span>");
+                }
+                if (statusTxt == "error") {
+                    alert("Error: " + xhr.status + ": " + xhr.statusText);
+                }
+
+            });
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1><a href="Home.aspx">Alex Lim's E-Learning Activities</a></h1>
+        <a href="bongTranslator.aspx">Translator</a> |
+        <a href="ServerTime.html">Server Time</a> |
+        <a href="getWeather.aspx">Weather</a>
+    </div><hr />
+
+    <button onclick="loadThruJqueryAjax('ServerTime.aspx','#ResultDiv');">Get Current Time</button>
+    <div id="ResultDiv">
+    </div>
+</body>
+</html>
